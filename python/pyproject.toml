@@ -1,0 +1,19 @@
+[project]
+name = "xsj"
+version = "0.1.0"
+description = "Command-line entry point for xerosere-jobs standard jobs"
+requires-python = ">=3.10"
+dependencies = ["click>=8.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+xsj = "xsj.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
