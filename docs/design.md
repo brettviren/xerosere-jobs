@@ -3,7 +3,7 @@ title: Design of xerosere-jobs
 view: design
 status: placeholder
 tracks:
-  - at: c78c5b9f82
+  - at: 2890da0c21
     paths: [src/noise_spectra.cpp, cfg/xsj/lib, python/src/xsj]
 ---
 
