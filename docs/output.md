@@ -1,6 +1,6 @@
 ---
 title: The output file of a standard job
-view: user
+viewpoint: user
 status: draft
 tracks:
   - at: 2890da0c21

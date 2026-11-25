@@ -1,6 +1,6 @@
 ---
 title: The command line of the standard jobs
-view: user
+viewpoint: user
 status: draft
 tracks:
   - at: c78c5b9f82

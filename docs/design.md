@@ -1,6 +1,6 @@
 ---
 title: Design of xerosere-jobs
-view: design
+viewpoint: design
 status: placeholder
 tracks:
   - at: 2890da0c21
