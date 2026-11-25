@@ -24,7 +24,8 @@ Layout:
 - `cfg/xsj/lib/`: shared Jsonnet (common TLAs, WCT islands, Arrow taps, HDF5
   output, SP flavors).
 - `python/`: the `xsj` package.
-- `docs/cli.md`: the command-line convention; `docs/output.md`: the output file.
+- `docs/`: the documentation ([start here](docs/index.md)).  It follows the
+  xerosere-docs guidelines and is built into the xerosere documentation.
 - `test/`: ctest smoke tests (run the Jsonnet through `phlexed`).
 
 Building: as part of a xero superbuild (`xero build -t xerosere`), or

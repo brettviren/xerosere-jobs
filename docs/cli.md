@@ -1,4 +1,13 @@
-# Command-line convention for standard jobs
+---
+title: The command line of the standard jobs
+view: user
+status: draft
+tracks:
+  - at: c78c5b9f82
+    paths: [python/src/xsj/cli.py, python/src/xsj/runner.py, cfg/xsj/lib/xsj.jsonnet]
+---
+
+# The command line of the standard jobs
 
 Every standard job runs through one entry point, `xsj`, a Python (Click)
 wrapper around `phlexed`:

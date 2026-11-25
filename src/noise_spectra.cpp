@@ -167,7 +167,9 @@ namespace xsj {
         std::size_t m_nfft{0}, m_nhalfout{0};
     };
 
+    // xdoc:begin fold-step
     void fold_step(SpectraCollector& acc, wcphlex::Frame const& frame) { acc.add(frame.ptr); }
+    // xdoc:end fold-step
 
     // No send(): Phlex 0.4.3 advertises a fold's product with the
     // ACCUMULATOR's type even when a send() overload makes it store another
@@ -229,11 +231,13 @@ PHLEX_REGISTER_ALGORITHMS(m, config)
         .threshold = config.get<double>("threshold", 0.9),
     };
 
+    // xdoc:begin fold-register
     m.fold("xsj_noise_fold", &xsj::fold_step, concurrency::serial, partition, std::move(opts))
       .input_family(product_selector{.creator = creator,
                                      .layer = layer,
                                      .suffix = experimental::identifier{suffix}})
       .output_product_suffixes("spectra");
+    // xdoc:end fold-register
 
     const product_selector spectra{.creator = "xsj_noise_fold",
                                    .layer = partition,

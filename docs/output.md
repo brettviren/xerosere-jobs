@@ -1,4 +1,13 @@
-# Output convention
+---
+title: The output file of a standard job
+view: user
+status: draft
+tracks:
+  - at: c78c5b9f82
+    paths: [cfg/xsj/lib/xsj.jsonnet, cfg/xsj/jobs, src/noise_spectra.cpp]
+---
+
+# The output file of a standard job
 
 A job writes one HDF5 file (`-o/--output`, default `JOB.h5`) with
 `phlex_arrow_hdf_output`.  Every product worth keeping is converted to Arrow
